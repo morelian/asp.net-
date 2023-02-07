@@ -1,0 +1,87 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Index.master.cs" Inherits="教务系统web版.Index" %>
+
+<!DOCTYPE html>
+
+<html>
+<head id="headerid1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	
+<base target='_self'>
+	<title>教学周历查看</title>	
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">
+    <link href="Css/blue.css" rel="stylesheet" />
+    <link href="Css/common.css" rel="stylesheet" />
+    <link href="Css/workstation.css" rel="stylesheet" />
+    
+            <asp:ContentPlaceHolder ID="head" runat="server">
+            </asp:ContentPlaceHolder>
+</head>
+
+
+<body>
+    <form runat="server">
+
+
+
+
+
+
+<div class="Nsb_pw">
+  <div class="Nsb_top">
+    <div class="Nsb_top_logo"><table border="0" cellpadding="0" cellspacing="0"><tr><td height="75" valign="middle"><img id="imgLogo" src="Image/index_02.png" /></td></tr></table></div>
+    <div style="float:right">        
+<asp:ContentPlaceHolder ID="body1" runat="server">
+    </asp:ContentPlaceHolder>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+       </div>
+             
+      
+     
+   </div>
+</div>
+<div class="Nsb_menu_pw" style="background-color:lightskyblue">
+  <div class="Nsb_pw">
+    <div id="divFirstMenuClass" class="Nsb_menu menu_cn" =>
+      <ul>         
+         <li  title="首页">
+         	<a class="Nsb_menu_li_h" id="homepage" href="Desk.aspx"><asp:Image ID="Image1" runat="server" ImageUrl="~/Image/Nsb_menu_h.gif" /></a>
+         </li>
+         
+         	<li title="我的桌面">
+         		<a id="calender_user_schedule" href="Calender.aspx">我的桌面</a>
+         	</li>
+         
+         	<li title="学籍成绩">
+         		<a id="calender_user_schedule" href="Score.aspx">学籍成绩</a>
+         	</li>
+         
+         	<li title="培养管理">
+         		<a id="calender_user_schedule" href="Plan.aspx">培养管理</a>
+         	</li>
+         
+         	<li title="考试报名">
+         		<a id="calender_user_schedule" href="Examplan.aspx">考试报名</a>
+         	</li>
+         
+         	<li title="实践环节">
+         		<a id="calender_user_schedule" href="Experimentap.aspx">实践环节</a>
+         	</li>
+         
+         	<li title="教学评价">
+         		<a id="calender_user_schedule" href="Evaluate.aspx">教学评价</a>
+         	</li>
+         
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+ 
+    </form>
+</body>
+</html>

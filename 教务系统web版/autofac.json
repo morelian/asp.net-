@@ -1,0 +1,13 @@
+{
+  "defaultAssembly": "教务系统web版",
+  "components": [
+    {
+      "type": "教务系统web版.DbContext,教务系统web版",
+      "services": [
+        {
+          "type": "SmartLinli.DatabaseDevelopement.SmartDbContext,SmartLinli.DatabaseDevelopement"
+        }
+      ]
+    }
+  ]
+}
